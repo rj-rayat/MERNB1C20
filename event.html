@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .comment-section {
+            background-color: burlywood;
+            border-radius: 10px;
+            padding: 10px;
+            min-height: 400px;
+            margin-top: 50px;
+        }
+
+        .comment {
+            background-color: azure;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .comment-box {
+            height: 100px;
+            width: 100%;
+            border: none;
+            border-radius: 10px;
+            background-color: darksalmon;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">Event</h1>
+
+    <button onclick="console.log('Hello')">Click Here</button>
+
+
+    <!-- Second Step -->
+    <button onclick="theme()">Dark</button>
+
+    <!-- Third Step -->
+
+    <button id="btn">Green</button>
+
+    <!-- Fourth Step -->
+
+    <button id="btn2">Red</button>
+
+    <div>
+        <p id="paragraph">Twoinsoft Technology</p>
+        <button id="update">Update to Rayat</button>
+    </div>
+
+    <div>
+        <p  id="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam enim neque perferendis, sapiente officia ducimus facilis maiores in illo temporibus illum obcaecati? Saepe maiores aspernatur, sequi ad expedita cumque quos.</p>
+
+        <input id="input" type="text">
+        <button id="update-btn" type="submit">update</button>
+    </div>
+
+    <!-- Comment -->
+
+    <div   class="comment-section">
+
+        <div id="box">
+                 <p class="comment">Lorem ipsum dolor sit amet.</p>
+            <p class="comment">Lorem ipsum dolor sit amet.</p>
+            <p class="comment">Lorem ipsum dolor sit amet.</p>
+     
+        </div>
+    
+
+           
+        
+        <input id="comment-text" class="comment-box" type="text">
+        <button id="comment-btn">Comment</button>
+    </div>
+
+    <script>
+        function theme(){
+            document.body.style.backgroundColor ="black"
+            document.body.style.color = "white"
+        }
+
+        const btn = document.getElementById('btn')
+        btn.onclick = function(){
+            document.body.style.backgroundColor ="green"
+            document.body.style.color = "white"
+        };
+
+        document.getElementById('btn2').addEventListener('click', function(){
+            document.body.style.backgroundColor ="red"
+            document.body.style.color = "white"
+        } )
+
+
+
+    </script>
+
+    <script src="event.js"></script>
+</body>
+</html>
